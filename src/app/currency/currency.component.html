@@ -1,0 +1,19 @@
+<div class="currency-component">
+
+  <currency-input-select 
+    [model]="baseObject" 
+    [currencyArr]="arrBase" 
+    (onFocusFn)="focusEvent($event)" 
+    (onKeyupFn)="onKeyupBase($event.target.value)" 
+    (onSelectFn)="onSelectBase($event)"
+  ></currency-input-select>
+  <currency-input-select 
+    [model]="convertObject" 
+    [currencyArr]="arrConvert" 
+    (onFocusFn)="focusEvent($event)" 
+    (onKeyupFn)="onKeyupConvert($event.target.value)" 
+    (onSelectFn)="onSelectConvert($event)"
+  ></currency-input-select>
+
+  <button class="swap-rates" (click)="swapRates([selectedBase, selectedConvert])">Swap Rates</button>
+</div>

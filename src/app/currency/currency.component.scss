@@ -1,0 +1,13 @@
+@import '~sass/variables';
+
+.currency-component {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  margin: .5em auto;
+}
+
+.swap-rates {
+  margin: .5em auto 1em;
+  max-width: 7em;
+}
